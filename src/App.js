@@ -1,9 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import { useContext } from 'react';
+import { ThemeContext } from './context/ThemeContext';
+import ToggleTheme from './components/ToggleTheme';
 
 function App() {
+
+  const { darkTheme } = useContext(ThemeContext);
+
   return (
-    <div className="App">
+    <div className={`App ${darkTheme ? 'dark-theme' : 'light-theme'}`}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -17,6 +23,7 @@ function App() {
         >
           Learn React
         </a>
+        <ToggleTheme />
       </header>
     </div>
   );

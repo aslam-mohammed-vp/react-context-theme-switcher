@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with React Theme Switcher
+
+Implemented Theme Switcher using react context api
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
